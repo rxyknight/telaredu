@@ -1,0 +1,320 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Baloo', cursive;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Baloo', cursive;
+    font-size: 18px;
+    line-height: 1.5;
+
+}
+
+h2 {
+    font-size: 50px;
+}
+
+section {
+    padding: 100px;
+}
+.header {
+    background: url(../img/Sydney.jpg) no-repeat center center scroll;
+}
+
+
+.header-university {
+    background: url(../img/university/universitylife.jpg) no-repeat center center scroll;
+}
+
+.header-plan {
+    background: url(../img/plan/plan.jpg) no-repeat center center scroll;
+}
+
+.header-career {
+    background: url(../img/career/career.jpg) no-repeat center center scroll;
+}
+
+.header .scroll-down {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    text-align: center;
+}
+
+header .scroll-down .btn {
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 100% !important;
+    line-height: 50px;
+    padding: 0;
+    letter-spacing: normal;
+    color: white;
+    font-size: 30px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+header .scroll-down .btn:hover {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.5);
+    outline: none;
+}
+
+header h1 {
+    color: yellow;
+}
+header h3 {
+    color: yellow;
+}
+
+/*主页header中德内容稍向上便宜50px*/
+.header .text-vertical-center {
+    position: relative;
+    top: -50px;
+}
+/*University页面不偏移*/
+.header-university .text-vertical-center {
+    position: relative;
+    top: 0;
+}
+
+/*了解更多(learn more) 鼠标划过变黄*/
+.header .btn:hover{
+    color: yellow;
+}
+/* About */
+
+.about {
+    padding: 50px 0;
+    background: cornsilk;
+}
+
+hr.colored {
+    border-color: #EF4035;
+}
+
+
+hr {
+    max-width: 200px;
+    margin: 20px auto;
+}
+
+hr {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    height: 2px;
+}
+
+.content-row {
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.content-row-uni {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    width: 90%;
+}
+
+.services .media i.fa {
+    height: 75px;
+    width: 75px;
+    line-height: 70px;
+    text-align: center;
+    border: 3px solid #222;
+    border-radius: 100%;
+    font-size: 30px;
+}
+
+.services .media .media-body h3 {
+    margin-bottom: 15px;
+}
+
+.services .media .media-body ul {
+    list-style: inside;
+    padding: 0;
+}
+
+.services .media .media-body ul li {
+    margin-bottom: 10px;
+    list-style-position: outside;
+    margin-left: 1.5em;
+}
+
+.bg-gray, #process, #detail{
+    background-color: #f5f5f5;
+}
+
+
+.about-carousel .item {
+    position: relative;
+    margin: 15px;
+}
+
+.about-carousel .item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+    opacity: 0.5;
+}
+
+.about-carousel .item .caption {
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.about-carousel .item .caption ul.social {
+    margin-top: 5px;
+}
+
+.about-carousel .item .caption h3 {
+    margin: 0;
+}
+
+.about-carousel .item .caption hr {
+    margin: 5px auto;
+    max-width: 50px;
+}
+
+.about-carousel .item .caption ul.social li a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#achievement {
+    padding: 50px;
+}
+
+.about-carousel .owl-controls {
+    margin-top: 0;
+}
+
+.about-carousel .owl-controls .owl-prev {
+    left: 15px;
+}
+
+.about-carousel .owl-controls .owl-next {
+    right: 15px;
+}
+
+.about-carousel .owl-controls .owl-prev, .about-carousel .owl-controls .owl-next {
+    text-align: center;
+    position: absolute;
+    height: 60px;
+    width: 40px;
+    border-radius: 0 !important;
+    line-height: 50px;
+    font-size: 30px !important;
+    margin: auto 0 !important;
+    top: 0;
+    bottom: 0;
+    background-color: #EF4035 !important;
+    color: white !important;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+footer {
+    padding: 0px;
+}
+
+footer hr {
+    border-color: #8a6d3b;
+}
+
+#contact .contact {
+    margin-bottom: 0px;
+}
+
+.floating-label-form-group {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #e1e1e1;
+}
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+    z-index: 1;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border: none;
+    border-radius: 0;
+    font-size: 1.5em;
+    background: none;
+    box-shadow: none !important;
+    resize: none;
+}
+.floating-label-form-group label {
+    display: block;
+    z-index: 0;
+    position: relative;
+    top: 2em;
+    margin: 0;
+    font-size: 0.85em;
+    line-height: 1.764705882em;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
+    -webkit-transition: top 0.5s ease,opacity 0.5s ease;
+    -moz-transition: top 0.5s ease,opacity 0.5s ease;
+    -ms-transition: top 0.5s ease,opacity 0.5s ease;
+    transition: top 0.5s ease,opacity 0.5s ease;
+}
+.floating-label-form-group::not(:first-child) {
+    padding-left: 14px;
+    border-left: 1px solid #e1e1e1;
+}
+.floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+}
+.floating-label-form-group-with-focus label {
+    color: #EF4035;
+}
+form .row:first-child .floating-label-form-group {
+    border-top: 1px solid #e1e1e1;
+}
+
+input.form-control {
+    border-radius: 0 !important;
+}
+
+.btn {
+    border-radius: 0;
+    padding: 12px 18px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.btn-outline-dark {
+    color: #222;
+    border: 1px solid #222;
+    background: transparent;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.btn, .input-group-btn {
+    /* border-radius: 0 !important; */
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
