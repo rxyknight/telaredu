@@ -82,6 +82,10 @@ var isPhoneDevice = "ontouchstart" in document.documentElement;
 $(document).ready(function() {
     if (isPhoneDevice) {
         //mobile
+        wow = new WOW({
+            offset: 50
+        })
+        wow.init();
     } else {
         //desktop
         // Initialize WOW.js
