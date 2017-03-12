@@ -1,5 +1,5 @@
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Baloo', cursive;
+    font-family: 'Baloo', 'NSimSun', cursive;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -11,28 +11,51 @@ p {
 
 }
 
-h2 {
-    font-size: 50px;
+
+
+
+
+@media (min-width: 481px) {
+    h1 {
+        font-size: 52px;
+    }
+    h2 {
+        font-size: 50px;
+    }
 }
+
+
+
+
 
 section {
-    padding: 100px;
+    padding: 100px 0;
 }
+
+@media (max-width: 767px) {
+    section {
+        padding: 75px 0;
+    }
+}
+
 .header {
-    background: url(../img/Sydney.jpg) no-repeat center center scroll;
+    position: relative;
+    display: block;
+    height: auto;
+    width: auto;
+    background-color: #222;
+    background: no-repeat center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding: 100px 0;
 }
 
-
-.header-university {
-    background: url(../img/university/universitylife.jpg) no-repeat center center scroll;
-}
-
-.header-plan {
-    background: url(../img/plan/plan.jpg) no-repeat center center scroll;
-}
-
-.header-career {
-    background: url(../img/career/career.jpg) no-repeat center center scroll;
+header img {
+    max-width: 150px;
+    max-height: 150px;
 }
 
 .header .scroll-down {
@@ -56,11 +79,27 @@ header .scroll-down .btn {
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-
 header .scroll-down .btn:hover {
     color: rgba(255, 255, 255, 0.5);
     border-color: rgba(255, 255, 255, 0.5);
     outline: none;
+}
+
+.header {
+    background: url(../img/Sydney.jpg) no-repeat center center scroll;
+}
+
+
+.header-university {
+    background: url(../img/university/universitylife.jpg) no-repeat center center scroll;
+}
+
+.header-plan {
+    background: url(../img/plan/plan.jpg) no-repeat center center scroll;
+}
+
+.header-career {
+    background: url(../img/career/career.jpg) no-repeat center center scroll;
 }
 
 header h1 {
@@ -72,19 +111,82 @@ header h3 {
 
 /*主页header中德内容稍向上便宜50px*/
 .header .text-vertical-center {
+    display: block;
     position: relative;
-    top: -50px;
+    top: 30%;
 }
-/*University页面不偏移*/
-.header-university .text-vertical-center {
-    position: relative;
-    top: 0;
-}
+
 
 /*了解更多(learn more) 鼠标划过变黄*/
 .header .btn:hover{
     color: yellow;
 }
+
+@media (min-width: 768px) {
+    .header {
+        height: 100vh;
+        width: 100%;
+        padding: 0;
+        background-attachment: scroll;
+        min-height: 700px;
+    }
+    /*header .intro-content {*/
+        /*color: white;*/
+        /*text-align: center;*/
+        /*width: 50%;*/
+        /*margin: auto;*/
+        /*position: absolute;*/
+        /*top: 50%;*/
+        /*left: 50%;*/
+        /*-webkit-transform: translate(-50%, -50%);*/
+        /*-ms-transform: translate(-50%, -50%);*/
+        /*transform: translate(-50%, -50%);*/
+    /*}*/
+    /*header .brand-name {*/
+        /*font-size: 80px;*/
+        /*line-height: 80px;*/
+    /*}*/
+    /*header .brand-name-subtext {*/
+        /*font-size: 30px;*/
+        /*line-height: 30px;*/
+    /*}*/
+    .header img {
+        max-width: 250px;
+        max-height: 250px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .header {
+        background-attachment: fixed;
+    }
+}
+
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .header {
+        background-attachment: scroll;
+    }
+}
+/*header .intro-content {*/
+    /*color: white;*/
+    /*text-align: center;*/
+    /*position: relative;*/
+/*}*/
+/*header .brand-name {*/
+    /*font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    /*font-size: 55px;*/
+    /*line-height: 55px;*/
+    /*text-transform: uppercase;*/
+    /*font-weight: 900;*/
+    /*margin-top: 15px;*/
+/*}*/
+/*header .brand-name-subtext {*/
+    /*font-size: 20px;*/
+    /*line-height: 20px;*/
+    /*font-weight: 300;*/
+/*}*/
+
 /* About */
 
 .about {
@@ -97,10 +199,7 @@ hr.colored {
 }
 
 
-hr {
-    max-width: 200px;
-    margin: 20px auto;
-}
+
 
 hr {
     border-top: 1px solid white;
@@ -108,9 +207,21 @@ hr {
     height: 2px;
 }
 
+@media (min-width: 768px) {
+    hr {
+        max-width: 200px;
+        margin: 20px auto;
+    }
+    hr.left {
+        margin: 20px auto 20px 0;
+    }
+    hr.right {
+        margin: 20px 0 20px auto;
+    }
+}
+
 .content-row {
     margin-top: 30px;
-    margin-bottom: 80px;
 }
 
 .content-row-uni {
@@ -195,8 +306,9 @@ hr {
     color: rgba(255, 255, 255, 0.7);
 }
 
+
 #achievement {
-    padding: 50px;
+    padding: 50px 0;
 }
 
 .about-carousel .owl-controls {
@@ -276,7 +388,7 @@ footer hr {
     -ms-transition: top 0.5s ease,opacity 0.5s ease;
     transition: top 0.5s ease,opacity 0.5s ease;
 }
-.floating-label-form-group::not(:first-child) {
+.floating-label-form-group:not {
     padding-left: 14px;
     border-left: 1px solid #e1e1e1;
 }
