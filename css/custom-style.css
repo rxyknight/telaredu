@@ -102,6 +102,22 @@ header .scroll-down .btn:hover {
     background: url(../img/career/career.jpg) no-repeat center center scroll;
 }
 
+@media (max-width: 500px) {
+    .header {
+        background: url(../img/Sydney-mobile.jpg) no-repeat center center scroll;
+    }
+    .header-university {
+        background: url(../img/university/universitylife-mobile.jpg) no-repeat center center scroll;
+    }
+    .header-plan {
+        background: url(../img/plan/plan-mobile.jpg) no-repeat center center scroll;
+    }
+    .header-career {
+        background: url(../img/career/career-mobile.jpg) no-repeat center center scroll;
+    }
+
+}
+
 header h1 {
     color: yellow;
 }
