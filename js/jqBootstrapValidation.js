@@ -185,7 +185,7 @@
             //                                                     EMAIL
             // ---------------------------------------------------------
             if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "email") {
-              message = "邮件地址无效<!-- data-validator-validemail-message to override -->";
+              message = $.i18n.prop('invalid_email');<!-- data-validator-validemail-message to override -->
               if ($this.data("validationValidemailMessage")) {
                 message = $this.data("validationValidemailMessage");
               } else if ($this.data("validationEmailMessage")) {

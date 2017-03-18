@@ -9,7 +9,7 @@
     <meta name="author" content="">
 
 
-    <title>Telar-edu 学校申请</title>
+    <title data-content="university_apply">Telar-edu 学校申请</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -55,17 +55,27 @@
     <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
         <li class="sidebar-brand">
-            <a href="index.html" onclick=$("#menu-close").click();>泰乐留学</a>
+            <a href="index.html" data-content="home" onclick=$("#menu-close").click();>泰乐留学</a>
         </li>
         <li>
-            <a href="#process" onclick=$("#menu-close").click();>申请流程</a>
+            <a href="#process" onclick=$("#menu-close").click(); data-content="application_process">申请流程</a>
+        </li>
+        <li><hr></li>
+        <li class="sidebar-brand">
+            <a data-content="language"  href="#">语言</a>
+        </li>
+        <li>
+            <a class="language" data-content="chinese" data-lang="zh_CN" href="#">中文</a>
+        </li>
+        <li>
+            <a class="language" data-content="english" data-lang="en_US" href="#">英文</a>
         </li>
     </ul>
 </nav>
 
 <header id="top" class="header header-university wow fadeIn" data-wow-delay=".5s">
     <div class="text-vertical-center wow fadeIn" data-wow-delay="1s">
-        <h1>帮您迈出留学第一步</h1>
+        <h1 data-content="university_apply_head">帮您迈出留学第一步</h1>
     </div>
     <div class="scroll-down">
         <a class="btn page-scroll" href="#process"><i class="fa fa-angle-down fa-fw"></i></a>
@@ -76,9 +86,9 @@
     <div class="container-fluid">
         <div class="row text-center">
             <div class="col-lg-12 wow fadeIn">
-                <h2>申请流程</h2>
+                <h2 data-content="application_process">申请流程</h2>
                 <hr class="colored">
-                <p>泰乐教育咨询会针对学生客户的实际情况制定出最为合理，最为优化的留学申请方案，
+                <p data-content="application_process_subhead">泰乐教育咨询会针对学生客户的实际情况制定出最为合理，最为优化的留学申请方案，
                     <br>包括：
                 </p>
             </div>
@@ -91,9 +101,9 @@
                         <i class="fa fa-check-square-o"></i>
                     </div>
                     <div class="media-body">
-                        <h3 class="media-heading">1. 留学咨询评估</h3>
+                        <h3 class="media-heading" data-content="application_process_step1_head">1. 留学咨询评估</h3>
                         <ul>
-                            <li>澳洲教育的整体介绍，根据学生客户的实际情况进行初步的评估及规划.</li>
+                            <li data-content="application_process_step1_content">澳洲教育的整体介绍，根据学生客户的实际情况进行初步的评估及规划.</li>
                         </ul>
                     </div>
                 </div>
@@ -105,9 +115,9 @@
                         <i class="fa fa-clipboard"></i>
                     </div>
                     <div class="media-body">
-                        <h3 class="media-heading">2. 申请材料的准备</h3>
+                        <h3 class="media-heading" data-content="application_process_step2_head">2. 申请材料的准备</h3>
                         <ul>
-                            <li>完善的沟通和服务保证客户在最短的时间内最为有效的准备好所有申请所需的材料及文书.</li>
+                            <li data-content="application_process_step2_content">完善的沟通和服务保证客户在最短的时间内最为有效的准备好所有申请所需的材料及文书.</li>
                         </ul>
                     </div>
                 </div>
@@ -119,9 +129,9 @@
                         <i class="fa fa-university"></i>
                     </div>
                     <div class="media-body">
-                        <h3 class="media-heading">3. 学校及专业的申请</h3>
+                        <h3 class="media-heading" data-content="application_process_step3_head">3. 学校及专业的申请</h3>
                         <ul>
-                            <li>根据学生的需求及情况，提供最为客观，优化的院校，专业的选择，并进行系统化的申请.</li>
+                            <li data-content="application_process_step3_content">根据学生的需求及情况，提供最为客观，优化的院校，专业的选择，并进行系统化的申请.</li>
                         </ul>
                     </div>
                 </div>
@@ -135,9 +145,9 @@
                         <i class="fa fa-comments"></i>
                     </div>
                     <div class="media-body">
-                        <h3 class="media-heading">4. 跟踪申请进度及与学校进行沟通</h3>
+                        <h3 class="media-heading" data-content="application_process_step4_head">4. 跟踪申请进度及与学校进行沟通</h3>
                         <ul>
-                            <li>保证每一个申请步骤的高效，透明，完善 (Conditional Offer, Full Offer, RPL等).</li>
+                            <li data-content="application_process_step4_content">保证每一个申请步骤的高效，透明，完善 (Conditional Offer, Full Offer, RPL等).</li>
                         </ul>
                     </div>
                 </div>
@@ -149,9 +159,9 @@
                         <i class="fa fa-cc-visa"></i>
                     </div>
                     <div class="media-body">
-                        <h3 class="media-heading">5. 学费支付，签证申请</h3>
+                        <h3 class="media-heading" data-content="application_process_step5_head">5. 学费支付，签证申请</h3>
                         <ul>
-                            <li>帮助学生在拿到录取通知书后完成一系列进入澳洲及学校的手续及步骤.</li>
+                            <li data-content="application_process_step5_content">帮助学生在拿到录取通知书后完成一系列进入澳洲及学校的手续及步骤.</li>
                         </ul>
                     </div>
                 </div>
@@ -163,9 +173,9 @@
                         <i class="fa fa-thumbs-up"></i>
                     </div>
                     <div class="media-body">
-                        <h3 class="media-heading">6. 入澳后续服务</h3>
+                        <h3 class="media-heading" data-content="application_process_step6_head">6. 入澳后续服务</h3>
                         <ul>
-                            <li>协助联系接机，住宿等相关如澳事宜，帮助学生尽快适应新环节，专心开始课程学习；并定期跟踪学生的学校及生活状况，提供必要帮助.</li>
+                            <li data-content="application_process_step6_content">协助联系接机，住宿等相关如澳事宜，帮助学生尽快适应新环节，专心开始课程学习；并定期跟踪学生的学校及生活状况，提供必要帮助.</li>
                         </ul>
                     </div>
                 </div>
@@ -178,7 +188,7 @@
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 text-center wow fadeIn">
                 <hr class="small">
-                <h4><strong>泰乐留学咨询</strong>
+                <h4><strong data-content="telar_edu_consult">泰乐留学咨询</strong>
                 </h4>
                 <ul class="list-unstyled">
                     <li><i class="fa fa-phone fa-fw"></i> +61 0411602408</li>
@@ -192,5 +202,9 @@
     </div>
     <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
 </footer>
+
+    <!--i18n and jquery cookie-->
+    <script src="js/jquery.i18n.properties.js"></script>
+    <script src="js/jquery.cookie.js"></script>
 </body>
 </html>

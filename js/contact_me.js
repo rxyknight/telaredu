@@ -35,7 +35,7 @@ $(function() {
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#success > .alert-success')
-                        .append("<strong>感谢您的邮件，我们会尽快联系您！</strong>");
+                        .append("<strong>"+$.i18n.prop('thanks_message')+"</strong>");
                     $('#success > .alert-success')
                         .append('</div>');
 
@@ -47,7 +47,7 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>抱歉 " + firstName + ", 邮件服务器无响应. 请稍后再试!");
+                    $('#success > .alert-danger').append("<strong>"+$.i18n.prop('email_server_no_response_complex',firstName)+"</strong>");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");

@@ -150,3 +150,42 @@ $(document).ready(function() {
     });
 
 })(jQuery);
+
+//for changing language
+
+$(function () {
+
+    updatePage();
+
+    $('.language').click(function(){
+        $.cookie('lang',$(this).attr('data-lang'));
+        location.href=window.location.href;
+    });
+
+    function updatePage(){
+        $.i18n.properties({
+            name:'content',
+            path:'lang/',
+            mode:'both',
+            language:$.cookie('lang'),
+            callback: function () {
+
+                //this is for normal content
+                $('[data-content]').each(function () {
+                    var content = $(this).attr('data-content');
+                    $(this).html($.i18n.prop(content));
+                })
+
+                //this is for content in element attribute (Contact Form)
+                $('#name[placeholder]').attr('placeholder',$.i18n.prop('name'))
+                    .attr('data-validation-required-message',$.i18n.prop('please_input_your_name'));
+                $('#email[placeholder]').attr('placeholder',$.i18n.prop('email'))
+                    .attr('data-validation-required-message',$.i18n.prop('please_input_your_email'));
+                $('#phone[placeholder]').attr('placeholder',$.i18n.prop('phone'))
+                    .attr('data-validation-required-message',$.i18n.prop('please_input_your_phone'));
+                $('#message[placeholder]').attr('placeholder',$.i18n.prop('message'))
+                    .attr('data-validation-required-message',$.i18n.prop('please_leave_message'));
+            }
+        });
+    }
+});

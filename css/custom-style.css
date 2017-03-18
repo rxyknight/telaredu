@@ -446,3 +446,10 @@ input.form-control {
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
+
+nav ul li hr {
+    margin: 5px auto;
+    border-top: 1px solid rgba(255,255,255,.15);
+    border-bottom: #333;
+    max-width: 100%;
+}
