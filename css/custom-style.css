@@ -453,3 +453,16 @@ nav ul li hr {
     border-bottom: #333;
     max-width: 100%;
 }
+
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown-content {
+    display: none;
+
+}
+
+.nav-dropdown:hover .nav-dropdown-content {
+    display: block;
+}

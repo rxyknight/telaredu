@@ -55,20 +55,39 @@
     <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
         <li class="sidebar-brand">
-            <a href="index.html" data-content="home" onclick=$("#menu-close").click();>泰乐留学</a>
+            <a href="#top" data-content="telar_edu_consult" onclick=$("#menu-close").click();>泰乐留学咨询</a>
         </li>
         <li>
-            <a href="#process" onclick=$("#menu-close").click(); data-content="application_process">申请流程</a>
+            <a href="#top" data-content="home" onclick=$("#menu-close").click();>主页</a>
+        </li>
+        <li>
+            <a href="#about" data-content="about_us" onclick=$("#menu-close").click();>关于我们</a>
+        </li>
+        <li>
+            <div class="nav-dropdown">
+                <a href="index.html#services" data-content="services" onclick=$("#menu-close").click();>服务项目</a>
+                <div class="nav-dropdown-content">
+                    <a href="universityapply.html">&nbsp;学校申请</a>
+                    <a href="plan.html">&nbsp;留学规划</a>
+                    <a href="career.html">&nbsp;职业咨询</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="#achievement" data-content="achievement" onclick=$("#menu-close").click();>成果展示</a>
+        </li>
+        <li>
+            <a href="#contact" data-content="contact_us" onclick=$("#menu-close").click();>联系我们</a>
         </li>
         <!--<li><hr></li>-->
         <!--<li class="sidebar-brand">-->
-            <!--<a data-content="language"  href="#">语言</a>-->
+        <!--<a data-content="language" href="#">语言</a>-->
         <!--</li>-->
         <!--<li>-->
-            <!--<a class="language" data-content="chinese" data-lang="zh_CN" href="#">中文</a>-->
+        <!--<a class="language" data-content="chinese" data-lang="zh_CN" href="#">中文</a>-->
         <!--</li>-->
         <!--<li>-->
-            <!--<a class="language" data-content="english" data-lang="en_US" href="#">英文</a>-->
+        <!--<a class="language" data-content="english" data-lang="en_US" href="#">英文</a>-->
         <!--</li>-->
     </ul>
 </nav>
