@@ -43,12 +43,16 @@ $(function() {
                     $('#contactForm').trigger("reset");
                 },
                 error: function() {
+
                     // Fail message
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#success > .alert-danger').append("<strong>"+$.i18n.prop('email_server_no_response_complex',firstName)+"</strong>");
                     $('#success > .alert-danger').append('</div>');
+                    // $("#success").fadeTo(2000, 500).slideUp(500, function(){
+                    //     $("#success").slideUp(500);
+                    // });
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },

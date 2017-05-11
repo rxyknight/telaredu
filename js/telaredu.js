@@ -167,7 +167,8 @@ $(function () {
             name:'content',
             path:'lang/',
             mode:'both',
-            language:$.cookie('lang'),
+            language:'zh_CN',
+            // language:$.cookie('lang'),
             callback: function () {
 
                 //this is for normal content
